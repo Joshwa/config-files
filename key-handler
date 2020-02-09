@@ -1,0 +1,15 @@
+#!/bin/sh
+while read file
+do
+	case "$1" in
+	"w")
+		cp "$file" ~/Pictures/wallpapers/.selected_wallpaper.png &&
+		wal -i "$HOME/Pictures/wallpapers/.selected_wallpaper.png" ;;
+	"g")
+		a="$file" &&
+		path="${a%/*}" && 
+		st -e ranger $path &
+		pid=$(pidof sxiv) &&
+		kill $pid ;;
+	esac
+done
