@@ -1,1 +1,14 @@
+# Sample profile by groups keys
 
+g logo 98971a # green
+g indicators d3869b # purple
+g multimedia 83a598 # blue
+g fkeys fb4934 # red
+g modifiers 8ec07c # aqua
+g arrows d65d0e # orange
+g numeric 458588 # blue
+g functions 689d6a # aqua
+g keys fadb2f # yellow
+g gkeys edbdd2 # white
+
+c # Commit changes
